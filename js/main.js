@@ -8,3 +8,12 @@ close.addEventListener("click", toggleModal);
 function toggleModal() {
   modal.classList.toggle("is-open");
 }
+
+//day1
+
+const buttonAuth = document.querySelector('.button-auth');
+const modalAuth = document.querySelector('.modal-auth');
+
+function toggleModalAuth() {
+  modalAuth.classList.toggle('modal-auth');
+}
