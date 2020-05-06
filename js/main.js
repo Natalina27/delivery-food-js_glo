@@ -15,5 +15,7 @@ const buttonAuth = document.querySelector('.button-auth');
 const modalAuth = document.querySelector('.modal-auth');
 
 function toggleModalAuth() {
-  modalAuth.classList.toggle('modal-auth');
+  modalAuth.classList.toggle('is-open');
 }
+
+buttonAuth.addEventListener('click', toggleModalAuth);
