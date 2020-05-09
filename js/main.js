@@ -13,9 +13,36 @@ function toggleModal() {
 
 const buttonAuth = document.querySelector('.button-auth');
 const modalAuth = document.querySelector('.modal-auth');
+const closeAuth = document.querySelector('.close-auth');
+const loginForm = document.querySelector('#logInForm');
+console.dir(modalAuth);
+
+let login = '';
 
 function toggleModalAuth() {
   modalAuth.classList.toggle('is-open');
 }
 
-buttonAuth.addEventListener('click', toggleModalAuth);
+
+function authorized() {
+  console.log('Authorized');
+}
+
+function notAuthorized() {
+  console.log('Not authorized');
+
+  function logIn(){
+    console.log('Login');
+
+  }
+
+  buttonAuth.addEventListener('click', toggleModalAuth);
+  closeAuth.addEventListener('click',toggleModalAuth);
+  loginForm.addEventListener('submit', logIn);
+}
+
+if(login){
+  authorized();
+}else{
+  notAuthorized();
+}
